@@ -1,15 +1,17 @@
-version: '3'
+version: '2'
 services:
   jenkins:
-    image: istresearch/jenkins:latest
-    container_name: jenkins
-    user: jenkins
-    volumes:
-      - /srv/data/jenkins:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
-    environment:
-      JENKINS_HOST_HOME: "/data/jenkins"
+    image: 'jenkins/jenkins:lts'
+    labels:
+      kompose.service.type: nodeport
     ports:
-      - "8080:8080"
-      - "5000:5000"
-      - "50000:50000"
+      - '80:8080'
+      - '443:8443'
+      - '50000:50000'
+    volumes:
+      - jenkins_data:/jenkins_config
+      - /srv/data/jenkins:/var/jenkins_home
+
+volumes:
+  jenkins_data:
+    driver: local
