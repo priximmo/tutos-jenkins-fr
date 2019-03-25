@@ -1,17 +1,12 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : premier job <-
+-> Jenkins : Trigger et lancement distant <-
 ========
 
 
 
 <br>
-* objectif du jour : mise en place d'un trigger
-
-
-<br>
-
 * trigger :
 		* sur échec
 		* sur réussite
@@ -22,11 +17,9 @@
 
 1er job :
 
-
 ```
 echo "Hello World"
 ```
-
 
 2ème job :
 
@@ -34,5 +27,24 @@ echo "Hello World"
 ```
 Merci !!
 ```
+
+----------------------------------------------------------------------------
+
+
+-> Mode remote via url <-
+
+
+
+* pour lancer un job via une autre machine
+
+* pour lancer un job via un site
+
+
+
+<br>
+
+* exemple avec MonPremierJob
+
+* création d'un token
 
 

@@ -1,38 +1,53 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : premier job <-
+-> Jenkins : Planification <-
 ========
 
 
-
-<br>
-* objectif du jour : mise en place d'un trigger
+* scheduler : dans "ce qui déclenche le build"
 
 
 <br>
-
-* trigger :
-		* sur échec
-		* sur réussite
-		* dans tous les cas
-
-<br> 
-* exemple :
-
-1er job :
-
+* même typo que les crons linux
 
 ```
-echo "Hello World"
+MINUTE   HOUR   DOM   MONTH   DOW
+
+
+MINUTE	Minutes within the hour (0–59)
+HOUR	The hour of the day (0–23)
+DOM	The day of the month (1–31)
+MONTH	The month (1–12)
+DOW	The day of the week (0–7) where 0 and 7 are Sunday.
+
+
+``` 
+
+------------------------------------------------------------
+
+
+
+-> Exemples <-
+
+
+
+* toutes les minutes
+
+```
+* * * * *
 ```
 
 
-2ème job :
-
+* toutes les 15 minutes
 
 ```
-Merci !!
+H/15 * * * *
 ```
 
 
+* tous les lundis à 13h00
+
+```
+00 13 * * 1
+```
