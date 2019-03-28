@@ -1,7 +1,7 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : user et roles <-
+-> Jenkins : users et roles <-
 ========
 
 
@@ -21,5 +21,5 @@
  
 Par exemple : développeurs, sysadmin...
 
-
+* affectation d'un pattern de jobs à un rôle : Java. Python.
 
