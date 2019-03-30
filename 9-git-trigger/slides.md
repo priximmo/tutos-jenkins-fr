@@ -40,6 +40,9 @@ java Main
 * git clone n'est plus nécessaire
 
 
+* préciser bien la branche
+
+
 * attention aux droits sur votre dépôt = credentials si nécessaire
 
 
