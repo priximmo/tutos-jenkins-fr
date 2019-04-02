@@ -70,7 +70,7 @@ java Main >test.file
 -> TEST <-
 
 
-* dépendant du déclenchemnt du RUN
+* dépendant du déclenchement du RUN
 
 * un principe
 
