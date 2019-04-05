@@ -41,7 +41,7 @@ Rq : config git particulier
 * TAG
 
 ```
-Tag to push : TAG-$BUILD_ID
+Tag to push : VERSION-$BUILD_ID
 
 Tag message : Jenkins Job
 
