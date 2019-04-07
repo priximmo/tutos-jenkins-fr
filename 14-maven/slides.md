@@ -22,7 +22,7 @@ sudo apt-get update
 sudo apt-get install oracle-java11-installer
 sudo vim /etc/environment 
 
-JAVA_HOME
+JAVA_HOME="/usr/lib/jvm/java-11-oracle/"
 ```
 
 * install maven :

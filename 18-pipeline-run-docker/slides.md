@@ -27,7 +27,9 @@
 			* agent : on travaille dans le conteneur (le conteneur est un host)
 			* node : on travaille de l'extérieur du conteneur (le conteneur est une cible)
 
+<br>
 
+* doc : https://jenkins.io/doc/book/pipeline/docker/
 
 -----------------------------------------------------
 
