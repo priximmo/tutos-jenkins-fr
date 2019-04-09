@@ -1,8 +1,10 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : Maven<-
+-> Jenkins : Maven <-
 ========
+
+Dépôt : https://github.com/priximmo/mvn-helloworld
 
 <br>
 
@@ -62,7 +64,7 @@ sudo apt-get install maven
 
 
 <br>
-* ajout d'un dpôt git avec un projet maven : pom.xml
+* ajout d'un dépôt git avec un projet maven : pom.xml
 
 
 * build : définir les actions
