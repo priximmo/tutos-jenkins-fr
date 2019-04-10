@@ -1,12 +1,12 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : premier pipeline<-
+-> Jenkins : premier pipeline <-
 ========
 
 
 <br>
-* pipeline: chaine d'actions / jobs décrite par du code (groovy)
+* pipeline: chaine d'actions / jobs décrits par du code (groovy)
 
 
 * modèle : https://jenkins.io/doc/book/pipeline/
