@@ -1,7 +1,7 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins Pipeline : Git syntax <-
+-> Jenkins Pipeline : générateur de syntax <-
 ========
 
 
