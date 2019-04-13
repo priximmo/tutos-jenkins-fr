@@ -1,7 +1,7 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins Pipeline : Jenkinsfile<-
+-> Jenkins Pipeline : Jenkinsfile <-
 ========
 
 
