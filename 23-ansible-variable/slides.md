@@ -8,11 +8,21 @@
 <br>
 * passer des variables de jenkins à ansible
 
+
 * pour :
 		* fixer les hosts
 		* écraser des variables dans des templates
 		* configurer des ip
 		...
+
+
+---------------------------------------------------------------------
+
+
+-> Comment passer une variable ? <-
+
+
+* Comme d'habitude lol
 
 <br>
 ```
@@ -31,4 +41,5 @@ node{
     }
 }
 ```
+
 --------------------------------------------------------------------
