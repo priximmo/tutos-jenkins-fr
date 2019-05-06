@@ -15,6 +15,8 @@
 		* configurer des ip
 		...
 
+* exemple : liste déroulante de hosts et variable de Home
+
 
 ---------------------------------------------------------------------
 
@@ -42,4 +44,4 @@ node{
 }
 ```
 
---------------------------------------------------------------------
+Rq : variabiliser le hosts.yml
