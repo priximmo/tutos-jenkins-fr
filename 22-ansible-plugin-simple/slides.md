@@ -14,15 +14,11 @@
 apt-get install ansible
 ```
 
-
-		
 		* ajout de clef ssh :
 
 
 ```
 ssh-keygen
-
-ssh-copy-id -i <clef_pub> jenkins@<ip>
 ```
 
 -------------------------------------------------------------------
@@ -38,8 +34,11 @@ ssh-copy-id -i <clef_pub> jenkins@<ip>
 useradd jenkins
 ```
 
-* add ssh key on server
+* ajout de la clef ssh (à partir de jenkins)
 
+```
+ssh-copy-id -i <clef_pub> jenkins@<ip>
+```
 
 * nopasswd /etc/sudoers
 
@@ -75,7 +74,7 @@ node{
 
 
 
--> Ansible : sans plugin <-
+-> Ansible : avec plugin <-
 
 
 
@@ -96,4 +95,3 @@ node{
 ```
 
 
---------------------------------------------------------------------
