@@ -37,7 +37,6 @@ curl -s "https://gitlab.com/api/v4/projects/9724367/registry/repositories/540409
 ```
 import groovy.json.JsonSlurper;
 def jsonSlurper = new JsonSlurper()
-def myjson = ("curl -s 'https://gitlab.com/api/v4/projects/9724367/registry/repositories/540409/tags'").execute()
 def nfile = "curl https://gitlab.com/api/v4/projects/9724367/registry/repositories/540409/tags".execute().text
 result = jsonSlurper.parseText(nfile);
 

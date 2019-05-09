@@ -10,13 +10,13 @@
 
 * test mvn > build mvn 
 
-    > images dock 
+    > images docker 
 
-        > test run dock
+        > test run docker
 
-            > push dock
+            > push docker
 
-                > deploy ansible
+                > deploy ansible (docker-compose, hosts, variable)
 
 
 --------------------------------------------------------------------------------
