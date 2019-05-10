@@ -8,16 +8,13 @@
 
 * un début de pipeline : manque test et ajout d'étapes intermédiaire
 
-* test mvn > build mvn 
-
-    > images docker 
-
-        > test run docker
-
-            > push docker
-
-                > deploy ansible (docker-compose, hosts, variable)
-
+```
+test mvn > build mvn 
+    >images docker 
+        >test run docker
+            >push docker
+                >deploy ansible (docker-compose, hosts, variable)
+```
 
 --------------------------------------------------------------------------------
 
