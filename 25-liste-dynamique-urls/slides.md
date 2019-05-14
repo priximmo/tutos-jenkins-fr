@@ -24,7 +24,7 @@ curl -s "https://gitlab.com/api/v4/projects/9724367/registry/repositories/540409
 ------------------------------------------------------------------------------
 
 
--> Extensible Choice <-
+-> Plugin Active Choice <-
 
 
 
