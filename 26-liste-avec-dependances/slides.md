@@ -1,7 +1,7 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins Pipeline : lites dépendantes <-
+-> Jenkins Pipeline : listes dépendantes <-
 ========
 
 <br>
@@ -13,6 +13,24 @@
 		1- Sélectionner un service (connu dans consul)
 		2- on préselectionne les machines par le services (consul)
 
+```
+                            +------------------------+
+                            |                        |
+                            |   Serv1 / Consul agent |
+                            |                        |
+                            +------------------------+
+    +------------------+
+    |                  |
+    |   Jenkins        |
+    |   Consul master  |
+    |                  |
+    +------------------+
+                            +------------------------+
+                            |                        |
+                            |   Serv2 / Consul agent |
+                            |                        |
+                            +------------------------+
+```
 
 ------------------------------------------------------------------------------------------
 
@@ -50,4 +68,33 @@ def nfile = "curl http://192.168.99.100:8500/v1/catalog/service/$Service".execut
 def result = jsonSlurper.parseText(nfile);
 return result.Node
 ```
+
+
+---------------------------------------------------------------------------------------------
+
+
+-> Exemple : Installation de nginx <-
+
+* déjà vu dans la vidéo 23
+
+```
+node{
+    stage('Clone') {
+        git 'https://github.com/priximmo/ansible-jenkins.git'
+    }
+    stage('Ansible') {
+      ansiblePlaybook (
+          colorized: true,
+          become: true,
+          playbook: 'playbook.yml',
+          inventory: 'hosts.yml',
+          extras: '--extra-vars "mavariable=${MAVARIABLE}"'
+      )
+    }
+}
+```
+
+
+```
+
 
