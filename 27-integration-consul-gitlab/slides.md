@@ -1,8 +1,15 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins Pipeline : exemple consul et gitlab <-
+-> Jenkins Pipeline : déploiement consul/gitlab/ansible <-
 ========
+
+<br>
+* vidéo 24 : comment faire un début d'intégration continue
+
+* reste à déployer de manière orchestrée
+
+Rq : ajouter des test (série de vidéos sur jmeter + ajouter JUnit)
 
 <br>
 * consul : détail dans la playlist
@@ -16,7 +23,7 @@
 	- but : déployer notre war sur une machine avec 2 listes :
 		1- on veut déployer un service (connu dans consul)
 		2- on préselectionne les machine spar le services (consul)
-		3- on liste les tags de l'image (gitlab)
+		3- on liste les image/tags de l'image (gitlab)
 
 
 ------------------------------------------------------------------------------------------
@@ -53,10 +60,9 @@ return affichage
 ```
 import groovy.json.JsonSlurper;
 def jsonSlurper = new JsonSlurper()
-def service = "$Service".toUpperCase()
-def nfile = "curl http://192.168.99.100:8500/v1/catalog/nodes".execute().text
+def nfile = "curl http://192.168.99.100:8500/v1/catalog/service/$Service".execute().text
 def result = jsonSlurper.parseText(nfile);
-return result.Node.findAll{ it ==~ ".*$service.*" }
+return result.Node
 ```
 
 
@@ -67,15 +73,15 @@ return result.Node.findAll{ it ==~ ".*$service.*" }
 -> Liste des tags docker pour une image <-
 
 
-* nom image = nom du service
+* nom image = nom du service (présélection)
 
-* Liste des tags
+* Choix de l'image docker : image/tag
 
 
 ```
 import groovy.json.JsonSlurper;
 def jsonSlurper = new JsonSlurper()
-def nfile = "curl -s https://gitlab.com/api/v4/projects/1729/registry/repositories".execute().text
+def nfile = "curl -s https://gitlab.com/api/v4/projects/9724367/registry/repositories".execute().text
 def service = "$Service"
 def list = jsonSlurper.parseText(nfile);
 for(def element : list) {
@@ -84,9 +90,31 @@ for(def element : list) {
     }
 }
 def jsonSlurper2 = new JsonSlurper()
-def tags = "curl -s https://gitlab.oscaroad.com/api/v4/projects/1729/registry/repositories/$id_filter/tags".execute().text
+def tags = "curl -s https://gitlab.com/api/v4/projects/9724367/registry/repositories/${id_filter}/tags".execute().text
 def list_tags = jsonSlurper2.parseText(tags);
 return list_tags.path
 ```
 
+-------------------------------------------------------------------------------------------
+
+
+-> Run par Ansible <-
+
+
+```
+node{
+    stage('Deploy - Clone') {
+          git 'https://github.com/priximmo/jenkins-ansible-docker.git'
+    }
+    stage('Deploy - Run') {
+      ansiblePlaybook (
+          colorized: true,
+          become: true,
+          playbook: 'playbook.yml',
+          inventory: '${Serveur},',
+          extras: "--extra-vars 'image=registry.gitlab.com/${ImageDocker}'"
+      )
+    }
+}
+```
 
