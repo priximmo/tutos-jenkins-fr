@@ -1,12 +1,11 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : intégration jmeter partie 1 <-
+-> Jenkins : intégration jmeter <-
 ========
 
-
+<br>
 * bientôt playlist Jmeter dans le détail
-
 
 <br>
 * plugin jmeter "Performance"

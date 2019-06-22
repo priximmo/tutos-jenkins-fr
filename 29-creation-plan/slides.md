@@ -1,7 +1,7 @@
 %title: Jenkins
 %author: xavki
 
--> Jenkins : création d'un plan Jmeter<-
+-> Jenkins : création d'un plan Jmeter <-
 ========
 
 Objectif : intégrer jmeter dans jenkins
