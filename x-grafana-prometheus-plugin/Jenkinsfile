@@ -1,0 +1,48 @@
+node {
+    def serviceName         =   "wartest"
+    def serviceRepo         =   "https://github.com/priximmo/war-build-docker.git"
+    def dockerRegistry      =   "registry.gitlab.com"
+    def dockerProjet        =   "${dockerRegistry}/xavki/presentations-jenkins/${serviceName}"
+    def dockerImage         =   "${dockerProjet}:version-${env.BUILD_ID}"
+    def packageBuild        =   "mvn package"
+    def credentialId        =   ""
+
+    stage('Build - Clone') {
+        git serviceRepo
+    }
+
+    stage('Build - Maven package'){
+            sh packageBuild
+    }
+
+    stage('Docker - Build/push') {
+        withDockerRegistry(url: "https://${dockerRegistry}", credentialsId: credentialId) {
+            def img = docker.build dockerImage, '.'
+            img.push()
+            img.push dockerImage
+            sh "docker rmi ${dockerImage}"
+            sh "docker rmi ${dockerProjet}:latest"
+        }
+    }
+    stage('Docker - Test') {
+            
+    }
+    stage('Build - Push') {
+          docker.withRegistry('https://registry.gitlab.com', 'reg1') {
+              img.push 'latest'
+              img.push()
+          }
+    }
+    stage('Deploy - Clone') {
+          git 'https://github.com/priximmo/jenkins-ansible-docker.git'
+    }
+    stage('Deploy - End') {
+      ansiblePlaybook (
+          colorized: true,
+          become: true,
+          playbook: 'playbook.yml',
+          inventory: 'hosts.yml',
+          extras: "--extra-vars 'image=$IMAGE'"
+      )
+    }
+}
