@@ -8,6 +8,8 @@ Dépôt : https://github.com/priximmo/mvn-helloworld
 
 <br>
 
+
+
 * install jenkins hors docker
 
 ```
@@ -16,6 +18,8 @@ https://jenkins.io/doc/book/installing/
 
 
 <br>
+
+
 * install java :
 
 ```
@@ -42,14 +46,20 @@ sudo apt-get install maven
 
 
 <br>
+
+
 * configuration global des outils
 
 
 <br>
 
+
+
 * configuration maven
 
 <br>
+
+
 
 * maven : MAVEN_HOME à définir
 
@@ -64,6 +74,8 @@ sudo apt-get install maven
 
 
 <br>
+
+
 * ajout d'un dépôt git avec un projet maven : pom.xml
 
 

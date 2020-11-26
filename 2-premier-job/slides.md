@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * vidéos courtes par petites étapes
 
 <br>
+
+
 * objectif du jour : premier job 
  
 ```

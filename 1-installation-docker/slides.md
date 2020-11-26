@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * ordonnanceur / Scheduleur
 
 - run de jobs
@@ -23,6 +25,8 @@
 - CLI possible
 
 <br>
+
+
 * site
 
 ```
@@ -36,6 +40,8 @@ https://jenkins.io/
 
 
 <br>
+
+
 * installation par paquet
 
 

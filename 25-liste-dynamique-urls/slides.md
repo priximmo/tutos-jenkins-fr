@@ -8,6 +8,8 @@
 -> Avoir une liste alimentée par url <-
 
 <br>
+
+
 Exemple : liste des images docker d'un repo gitlab
 
 ```
@@ -29,9 +31,13 @@ curl -s "https://gitlab.com/api/v4/projects/9724367/registry/repositories/540409
 
 
 <br>
+
+
 * ajout d'un plugin : active choice parameter
 
 <br>
+
+
 * utilisation d'un script groovy
 
 ```

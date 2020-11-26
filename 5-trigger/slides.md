@@ -7,12 +7,16 @@
 
 
 <br>
+
+
 * trigger :
 		* sur échec
 		* sur réussite
 		* dans tous les cas
 
-<br> 
+<br>
+
+ 
 * exemple :
 
 1er job :
@@ -42,6 +46,8 @@ Merci !!
 
 
 <br>
+
+
 
 * exemple avec MonPremierJob
 

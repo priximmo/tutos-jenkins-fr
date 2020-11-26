@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * modèle : https://jenkins.io/doc/book/pipeline/
 
 ```
@@ -40,6 +42,8 @@ pipeline {
 
 
 <br>
+
+
 * java helloworld
 
 ```

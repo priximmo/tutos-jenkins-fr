@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * pour quoi faire ?
 		- factoriser
 		- mutualiser
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 * Comment ?
 		- création d'un dépôt git :
 				- ajout dir src/ressources/vars

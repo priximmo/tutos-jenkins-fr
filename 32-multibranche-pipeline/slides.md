@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * un projet avec un job mutlibranches
 
 * scan les branches souhaitées ou non-souhaitées

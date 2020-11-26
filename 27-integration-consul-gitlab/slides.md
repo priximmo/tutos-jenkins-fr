@@ -5,6 +5,8 @@
 ========
 
 <br>
+
+
 * vidéo 24 : comment faire un début d'intégration continue
 
 * reste à déployer de manière orchestrée
@@ -12,9 +14,13 @@
 Rq : ajouter des test (série de vidéos sur jmeter + ajouter JUnit)
 
 <br>
+
+
 * consul : détail dans la playlist
 
 <br>
+
+
 * job alimenté par des éléments dynamiques (on y touche jamais)
 
 * installation simplifiée pour exemple :

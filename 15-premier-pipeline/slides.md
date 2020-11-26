@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * pipeline: chaine d'actions / jobs décrits par du code (groovy)
 
 
@@ -45,6 +47,8 @@ pipeline {
 
 
 <br>
+
+
 * java helloworld
 
 

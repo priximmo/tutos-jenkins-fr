@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * répartition de la charge et plus de fluidité dans les déploiements
 
 * disposer d'une plateforme de tests adaptés : os, docker, kubernetes...
 
 <br>
+
+
 * installation du slave :
 
 ```
@@ -21,6 +25,8 @@ adduser jenkins
 ```
 
 <br>
+
+
 * sur le master création d'une clef ssh
 
 ```

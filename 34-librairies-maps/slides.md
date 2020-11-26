@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * vidéo précédente : utiliser une librairie et configurer
 
 ```
@@ -13,6 +15,8 @@ helloWorld{}
 ```
 
 <br>
+
+
 * comment lui passer une variable ?
 
 ```
@@ -29,6 +33,8 @@ action = "Bonjour"
 
 
 <br>
+
+
 * le call de la librairie récupère une map (tableau)
 
 

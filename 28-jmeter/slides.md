@@ -5,27 +5,41 @@
 ========
 
 <br>
+
+
 * bientôt playlist Jmeter dans le détail
 
 <br>
+
+
 * plugin jmeter "Performance"
 
 Pb: fichier /etc/java-8-openjdk/accessibility.properties
 Commenter : #assistive_technologies=org.GNOME.Accessibility.AtkWrapper
 
 <br>
+
+
 Principe :
 
 <br>
+
+
 * créer un plan de test jmeter via interface graphique
 
 <br>
+
+
 * exporter le plan (format jmx - xml)
 
 <br>
+
+
 * jouer le test en CLI dans le pipeline
 
 <br>
+
+
 * lecture des résultats via plugin "Performance"
 
 
@@ -40,6 +54,8 @@ Principe :
 
 
 <br>
+
+
 * download du binaire :
 
 ```

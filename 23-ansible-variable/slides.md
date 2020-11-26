@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * passer des variables de jenkins à ansible
 
 
@@ -27,6 +29,8 @@
 * Comme d'habitude lol
 
 <br>
+
+
 ```
 node{
     stage('Clone') {

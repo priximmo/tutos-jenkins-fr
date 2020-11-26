@@ -5,9 +5,13 @@
 ========
 
 <br>
+
+
 * consul : détail dans la playlist
 
 <br>
+
+
 * job alimenté par des éléments dynamiques (on y touche jamais)
 
 		1- Sélectionner un service (connu dans consul)

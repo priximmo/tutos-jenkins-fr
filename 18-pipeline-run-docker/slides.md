@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * pourquoi ?
 
  
@@ -28,6 +30,8 @@
 			* node : on travaille de l'extérieur du conteneur (le conteneur est une cible)
 
 <br>
+
+
 
 * doc : https://jenkins.io/doc/book/pipeline/docker/
 

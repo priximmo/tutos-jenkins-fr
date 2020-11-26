@@ -11,12 +11,18 @@ Objectif : intégrer jmeter dans jenkins
 * jouer ce plan dans jenkins à chaque déploiement
 
 <br>
+
+
 * Thread Group : tout ce qui est sauvegardé
 
 <br>
+
+
 * Workspace : zéro sauvegarde
 
 <br>
+
+
 * samplers : requêtes
 
 * assertions: vérification du résultat / tests
@@ -24,6 +30,8 @@ Objectif : intégrer jmeter dans jenkins
 * listeners : affichage du résultat
 
 <br>
+
+
 Exemple : parser la home et ses liens (wartest)
 
 -----------------------------------------------------------------------------
@@ -32,12 +40,18 @@ Exemple : parser la home et ses liens (wartest)
 
 
 <br>
+
+
 0- Thread : 10 users - loop 1
 
 <br>
+
+
 1- création du sampler : HTTP Request ( ip - GET / - port 8081 )
 
 <br>
+
+
 2- HTTP request > add post processor : regular expression extractor
 	- Body
 	- name : urls
@@ -47,6 +61,8 @@ Exemple : parser la home et ses liens (wartest)
 	- default : NOLINK
 
 <br>
+
+
 3-  Thread > ajout insert parent > For each controller
 	- input : urls
 	- output : url
@@ -58,4 +74,6 @@ Exemple : parser la home et ses liens (wartest)
 	- /${url}
 
 <br>
+
+
 4- Thread > View result tree

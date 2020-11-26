@@ -6,10 +6,14 @@
 
 
 <br>
+
+
 * un dépôt :
 https://github.com/priximmo/jenkins-helloworld
 
 <br>
+
+
 * build sans utilisation du plugin GIT
 
 ```
@@ -33,10 +37,14 @@ java Main
 
 
 <br>
+
+
 * Gestion de Code Source : GIT
 
 
 <br>
+
+
 * git clone n'est plus nécessaire
 
 
@@ -47,10 +55,14 @@ java Main
 
 
 <br>
+
+
 * et directement placé dans le répertoire cloné
 
 
 <br>
+
+
 * build réduit :
 
 ```
@@ -68,6 +80,8 @@ java Main
 
 
 <br>
+
+
 * trigger : check à intervales réguliers 
 
 
