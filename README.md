@@ -1,5 +1,10 @@
 # JENKINS : Tutoriels FR
 
+BLOG : https://xavki.blog/jenkins-tutoriaux-francais/
+
+Playlist : https://www.youtube.com/playlist?list=PLn6POgpklwWr19VXuoVgIr32HCu0MGNt9
+
+
 - 1. [JENKINS - 0. FORMATIONS](https://www.youtube.com/watch?v=RT8bPtiOAq8)
 - 2. [JENKINS - 1. INTRODUCTION ET INSTALLATION | TUTOS FR](https://www.youtube.com/watch?v=Gy4Nk2pIuNs)
 - 3. [JENKINS - 2. PREMIER JOB](https://www.youtube.com/watch?v=WTJNKAcgihE)
